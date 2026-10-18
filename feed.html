@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feed</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<h1>Richfield Connect</h1>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Sign-Up</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="feed.html">Feed</a></li>
+</ul>
+</div>
+</nav>
+
+
+<div class="container">
+
+<h2>Campus Feed</h2>
+
+<textarea id="postInput" rows="4" placeholder="Share your thoughts"></textarea>
+
+<input type="file" id="postImage" accept="image/*">
+
+<button id="submitPost" class="btn">Post</button>
+
+<div id="feedContainer"></div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/feed.js"></script>
+</body>
+</html>

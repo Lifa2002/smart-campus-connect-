@@ -1,0 +1,157 @@
+
+:root {
+    --primary-blue: #003366;
+    --accent-blue: #00509d;
+    --light-grey: #f4f7f6;
+    --white: #ffffff;
+    --error-red: #d9534f;
+    --text-dark: #333333;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    margin: 0;
+    background-color: var(--light-grey);
+    color: var(--text-dark);
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-blue);
+    padding: 1rem 0;
+    color: var(--white);
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #cce0ff;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Form Styling */
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.btn {
+    background: var(--primary-blue);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11pt;
+}
+
+.btn-danger {
+    background: var(--error-red);
+}
+
+/* Feedback & UI */
+.error-msg {
+    color: var(--error-red);
+    font-size: 10pt;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.invalid {
+    border: 2px solid var(--error-red);
+}
+
+.post-card {
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+}
+
+#previewPanel {
+    background: #eef2f7;
+    padding: 15px;
+    border-left: 5px solid var(--primary-blue);
+    margin-top: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 10pt;
+}
+
+.like-btn.liked {
+    background-color: var(--accent-blue);
+}
+
+.feed-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 15px 0;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

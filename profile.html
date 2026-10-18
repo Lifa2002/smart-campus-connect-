@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<h1>Richfield Connect</h1>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Sign-Up</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="feed.html">Feed</a></li>
+</ul>
+</div>
+</nav>
+
+
+<div class="container">
+<h2>Student Profile</h2>
+
+<div id="profileDetails">
+<p><strong>Name:</strong> <span id="profName"></span></p>
+<p><strong>Student Number:</strong> <span id="profID"></span></p>
+<p><strong>Email:</strong> <span id="profEmail"></span></p>
+<p><strong>Campus:</strong> <span id="profCampus"></span></p>
+<p><strong>Bio:</strong> <span id="profBio"></span></p>
+
+<div id="profInterests"></div>
+</div>
+
+<button id="toggleProfile" class="btn">Toggle Profile Details</button>
+<button id="logoutBtn" class="btn btn-danger">Clear Data</button>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

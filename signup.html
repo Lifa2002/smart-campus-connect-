@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+<div class="nav-container">
+<h1>Richfield Connect</h1>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Sign-Up</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="feed.html">Feed</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="container">
+<h2>Create Student Account</h2>
+
+<form id="registrationForm">
+
+<input type="text" id="userName" placeholder="Full Name">
+<span class="error-msg" id="nameError">Please enter your full name.</span>
+
+<input type="text" id="studentID" placeholder="Student Number">
+<span class="error-msg" id="idError">Student number must be numeric.</span>
+
+<select id="campus">
+<option value="">Select Campus / DL</option>
+<option>Benoni Campus</option>
+<option>Pretoria Campus</option>
+<option>Durban Campus</option>
+<option>Distance Learning</option>
+</select>
+<span class="error-msg" id="campusError">Please select a campus.</span>
+
+<input type="email" id="userEmail" placeholder="Email Address">
+<span class="error-msg" id="emailError">Please enter a valid email.</span>
+
+<input type="password" id="userPass" placeholder="Password">
+<span class="error-msg" id="passError">Password must be at least 8 characters.</span>
+
+<input type="password" id="confirmPass" placeholder="Confirm Password">
+<span class="error-msg" id="confirmError">Passwords do not match.</span>
+
+<input type="text" id="interests" placeholder="Interests (comma separated)">
+
+<textarea id="bio" rows="4" placeholder="Short Bio"></textarea>
+
+<button type="submit" class="btn">Register</button>
+
+</form>
+
+<div id="previewPanel">
+<h3>Live Profile Preview</h3>
+<p><strong>Name:</strong> <span id="prevName">---</span></p>
+<p><strong>Bio:</strong> <span id="prevBio">---</span></p>
+<div id="interestTags"></div>
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
